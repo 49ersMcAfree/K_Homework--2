@@ -49,6 +49,17 @@ public class studentmanager {
 		}
 		return false;
 	}
+	
+	public void displayStudents() {
+		// Display the students
+		if (student == NULL) {
+			System.out.println("No students to display");
+		} else {
+			for (int i = 0; i < students.length; i++) {
+				toString(students[i]);
+			}
+		}
+	}
 
 	/**
 	 * @param args
