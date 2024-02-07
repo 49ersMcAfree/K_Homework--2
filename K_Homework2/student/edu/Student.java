@@ -24,7 +24,6 @@ public class Student {
         this.grade = grade;
     }
 
-
     // Getter and Setter 
     public int getId() {
         return id;
@@ -36,7 +35,6 @@ public class Student {
     public String getName() {
         return name;
     }
-
     public void setName(String name) {
         this.name = name;
     }
