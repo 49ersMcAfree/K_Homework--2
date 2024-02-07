@@ -54,7 +54,7 @@ public class Student {
     // toString method to display student information
     @Override
     public String toString() {
-         return "Student{" + "id=" + id + ", name='" + name + '\'' + ", grade=" + grade +'}';
+         return "Student [id=" + id + ", name=" + name + ", grade=" + grade + "]";
 
     }
 //The bottom down is commented out for now
