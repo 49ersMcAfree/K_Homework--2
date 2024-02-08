@@ -73,6 +73,7 @@ public class StudentManager {
 
 	public boolean searchStudentById(int id) {
 		// Search for a student by ID
+		aLength = students.length;
 		for (int i = 0; i < aLength; i++) {
 			if ((students[i].equals(id))) {
 				System.out.println("Student found: " + students[i].toString());
