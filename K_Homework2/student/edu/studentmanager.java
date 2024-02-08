@@ -16,7 +16,7 @@ public class StudentManager {
 
 	
 	private Student[] students = new Student[10];
-	prvate int numberofStudents;
+	private int numberofStudents;
 	/**
 	 * 
 	 */
