@@ -54,7 +54,7 @@ public class StudentManager {
 			}
 			return true;
 		} catch (FileNotFoundException e) {
-			//e.printStackTrace();
+			e.printStackTrace();
 		}
 		return false;
 	}
