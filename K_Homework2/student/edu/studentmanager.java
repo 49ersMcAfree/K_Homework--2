@@ -37,20 +37,20 @@ public class StudentManager {
 			// Read the Data line by line
 			while(fileIn.hasNext()) {
 				
-				//System.out.println("Line: " + fileIn.nextLine());
+				
 				int S_id = fileIn.nextInt();
-				//System.out.println(S_id);
+			
 				String S_name = fileIn.next();
-				//System.out.println(S_name+"HERE!!!!2");
+				
 				String S_name2 = fileIn.next();
-				//System.out.println(S_name2+"HERE!!!!2");
+				
 				double S_grade = fileIn.nextDouble();
-				//System.out.println(S_grade+"HERE!!!!3");
+				
 				System.out.println("");
 				students[i] = new Student(S_id, S_name, S_grade);
 				System.out.println(S_id+"\t"+S_name+"\t"+S_name2+"\t"+S_grade);
 				i++;
-				//System.out.println("Name: " + name + ", Age: " + age);	
+
 			}
 			return true;
 		} catch (FileNotFoundException e) {
