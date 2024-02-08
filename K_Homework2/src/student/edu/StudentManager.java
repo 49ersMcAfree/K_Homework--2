@@ -47,7 +47,7 @@ public class StudentManager {
 				
 				System.out.println("");
 				students[i] = new Student(S_id, S_name, S_name2, S_grade);
-				System.out.println(S_id+"\t"+S_name+"\t"+S_name2+"\t"+S_grade);
+				//System.out.println(S_id+"\t"+S_name+"\t"+S_name2+"\t"+S_grade);
 				i++;
 				numberofStudents = i;
 
@@ -137,7 +137,7 @@ public class StudentManager {
 		for (Student student : students) {
   			if (student.getId() == id) {
 				student.setGrade(grade);
-     				System.out.println("Student grade updated: + " + student);
+     				System.out.println("Student grade updated: " + student);
 				return true;
    			}
      		}
