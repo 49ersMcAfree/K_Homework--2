@@ -84,7 +84,6 @@ public class StudentManager {
 	public class Student {
 	    private int id;
 	    private String name;
-	    private String name2;
 	    private double grade;
 		
 
@@ -95,8 +94,7 @@ public class StudentManager {
 		// Parameterized constructor
 	    public Student(int s_id, String name, String name2, double s_grade) {
 	        this.id = s_id;
-	        this.name = name;
-		this.name2 = name2;
+	        this.name = (name + " " + name2);
 	        this.grade = s_grade;
 	    }
 
@@ -110,12 +108,10 @@ public class StudentManager {
 	    }
 	    public String getName() {
 	        return name;
-		return name2;
 	    }
 
 	    public void setName(String name) {
 	        this.name = name;
-		this.name2 = name2;
 	    }
 	    public double getGrade() {
 	        return grade;
@@ -128,7 +124,7 @@ public class StudentManager {
 	    public String toString() {
 	    	
 	    
-	         return "Student [id=" + id + ", name=" + name + name2 + ", grade=" + grade + "]";
+	         return "Student [id=" + getId() + ", name=" + getName() + ", grade=" + getGrade() + "]";
 
 	    }
 	}
