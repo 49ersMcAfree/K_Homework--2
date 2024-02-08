@@ -27,12 +27,9 @@ public class StudentManager {
 	public boolean readFromFile(String fileName) {
 		try {
 			Scanner fileIn = new Scanner(new FileInputStream("studentData.txt"));
-			//Student[] students = new Student[5];
+			
 			int i=0;
-			// Read the data separated by whitespaces and new lines
-//			while(fileIn.hasNext()) {
-//				System.out.println("String token: " + fileIn.next());
-//			}
+		
 			
 			// Read the Data line by line
 			while(fileIn.hasNext()) {
