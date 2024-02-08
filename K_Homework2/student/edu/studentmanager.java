@@ -130,11 +130,21 @@ public class StudentManager {
 
 	    }
 	}
-/*
-	public boolean updateStudentGradeById(int id, double grade) {
-	/**
-	 * @param args
-	 */
+	 public boolean updateStudentGradeById(int id, double grade) {
+ 		if (students == null || students.length == 0) {
+   			return false;
+      		}
+		for (Student student : students) {
+  			if (student.getId() == id) {
+				student.setGrade(grade);
+     				System.out.println("Student grade updated: + " + student);
+				return true;
+   			}
+     		}
+		System.out.println("Student with ID " + id + " not found, grade not updated.");	
+	 	return false;
+	}
+	 
 	
 	
 
