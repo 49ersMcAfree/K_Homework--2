@@ -16,6 +16,7 @@ public class StudentManager {
 
 	
 	private Student[] students = new Student[10];
+	prive int numberofStudents;
 	/**
 	 * 
 	 */
@@ -29,6 +30,7 @@ public class StudentManager {
 			Scanner fileIn = new Scanner(new FileInputStream("studentData.txt"));
 			
 			int i=0;
+			numberofStudents = 0;
 			
 			
 			// Read the Data line by line
@@ -47,6 +49,7 @@ public class StudentManager {
 				students[i] = new Student(S_id, S_name, S_name2, S_grade);
 				System.out.println(S_id+"\t"+S_name+"\t"+S_name2+"\t"+S_grade);
 				i++;
+				numberofStudents = i;
 
 			}
 			return true;
@@ -58,11 +61,10 @@ public class StudentManager {
 	
 	public void displayStudents() {
 		// Display the students
-		aLength = students.length;
-		if (students.length == 0) {
+		if (numberofStudents == 0) {
 			System.out.println("No students to display");
 		} else {
-			for (int i = 0; i < aLength; i++) {
+			for (int i = 0; i < numberofStudents; i++) {
 				System.out.println(students[i].toString());
 			}
 		}
@@ -70,8 +72,7 @@ public class StudentManager {
 
 	public boolean searchStudentById(int id) {
 		// Search for a student by ID
-		aLength = students.length;
-		for (int i = 0; i < aLength; i++) {
+		for (int i = 0; i < numberofStudents; i++) {
 			if ((students[i].equals(id))) {
 				System.out.println("Student found: " + students[i].toString());
 				return true;
