@@ -81,27 +81,14 @@ public class StudentManager {
 		return false;
 	}
 
-	public class Student {
-	    private int id;
-	    private String name;
-	    private double grade;
-		
 
-		/**
- * 
- */
 
-/**
- * 
- */
+
 public class Student {
     private int id;
     private String name;
     private double grade;
 
-	/**
-	 * 
-	 */
  public Student() {
 		// TODO Auto-generated constructor stub
 	}
@@ -148,18 +135,3 @@ public Student(int id, String name, double grade) {
 	
 
 }
-
-
-
-//The bottom down is commented out for now
-    /*// Main method for demonstration
-
-	/**
-	 * @param args
-	 */
-	//public static void main(String[] args) {
-		// TODO Auto-generated method stub
-
-	//} 
-
-//}
