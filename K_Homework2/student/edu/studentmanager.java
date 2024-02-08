@@ -61,10 +61,11 @@ public class StudentManager {
 	
 	public void displayStudents() {
 		// Display the students
+		aLength = students.length;
 		if (students.length == 0) {
 			System.out.println("No students to display");
 		} else {
-			for (int i = 0; i < 5; i++) {
+			for (int i = 0; i < aLength; i++) {
 				System.out.println(students[i].toString());
 			}
 		}
@@ -72,7 +73,7 @@ public class StudentManager {
 
 	public boolean searchStudentById(int id) {
 		// Search for a student by ID
-		for (int i = 0; i < 5; i++) {
+		for (int i = 0; i < aLength; i++) {
 			if ((students[i].equals(id))) {
 				System.out.println("Student found: " + students[i].toString());
 				return true;
