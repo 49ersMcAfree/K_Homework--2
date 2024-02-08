@@ -39,13 +39,13 @@ public class StudentManager {
 				
 				//System.out.println("Line: " + fileIn.nextLine());
 				int S_id = fileIn.nextInt();
-				System.out.println(S_id);
+				//System.out.println(S_id);
 				String S_name = fileIn.next();
-				System.out.println(S_name+"HERE!!!!2");
+				//System.out.println(S_name+"HERE!!!!2");
 				String S_name2 = fileIn.next();
-				System.out.println(S_name2+"HERE!!!!2");
+				//System.out.println(S_name2+"HERE!!!!2");
 				double S_grade = fileIn.nextDouble();
-				System.out.println(S_grade+"HERE!!!!3");
+				//System.out.println(S_grade+"HERE!!!!3");
 				System.out.println("");
 				students[i] = new Student(S_id, S_name, S_grade);
 				System.out.println(S_id+"\t"+S_name+"\t"+S_name2+"\t"+S_grade);
@@ -64,15 +64,15 @@ public class StudentManager {
 		if (students.length == 0) {
 			System.out.println("No students to display");
 		} else {
-			for (int i = 0; i < students.length; i++) {
-				students[i].toString();
+			for (int i = 0; i < 5; i++) {
+				System.out.println(students[i].toString());
 			}
 		}
 	}
 
 	public boolean searchStudentById(int id) {
 		// Search for a student by ID
-		for (int i = 0; i < students.length; i++) {
+		for (int i = 0; i < 5; i++) {
 			if ((students[i].equals(id))) {
 				System.out.println("Student found: " + students[i].toString());
 				return true;
@@ -81,51 +81,53 @@ public class StudentManager {
 		return false;
 	}
 
+	public class Student {
+	    private int id;
+	    private String name;
+	    private double grade;
+		
 
+		
+		public Student() {
+			// TODO Auto-generated constructor stub
+		}
+		// Parameterized constructor
+	    public Student(int s_id, String name, double s_grade) {
+	        this.id = s_id;
+	        this.name = name;
+	        this.grade = s_grade;
+	    }
 
+	    // Getter and Setter 
+	    public int getId() {
+	        return id;
+	    }
 
-public class Student {
-    private int id;
-    private String name;
-    private double grade;
+	    public void setId(int id) {
+	        this.id = id;
+	    }
+	    public String getName() {
+	        return name;
+	    }
 
- public Student() {
-		// TODO Auto-generated constructor stub
+	    public void setName(String name) {
+	        this.name = name;
+	    }
+	    public double getGrade() {
+	        return grade;
+	    }
+	    public void setGrade(double grade) {
+	        this.grade = grade;
+	    }
+
+	    // toString method to display student information
+	    public String toString() {
+	    	
+	    
+	         return "Student [id=" + id + ", name=" + name + ", grade=" + grade + "]";
+
+	    }
 	}
-// Parameterized constructor
-public Student(int id, String name, double grade) {
-        this.id = id;
-        this.name = name;
-        this.grade = grade;
-    }
-
-    // Getter and Setter 
-    public int getId() {
-        return id;
-    }
-
-    public void setId(int id) {
-        this.id = id;
-    }
-    public String getName() {
-        return name;
-    }
-    public void setName(String name) {
-        this.name = name;
-    }
-    public double getGrade() {
-        return grade;
-    }
-    public void setGrade(double grade) {
-        this.grade = grade;
-    }
-
-    // toString method to display student information
-    @Override
-    public String toString() {
-         return "Student [id=" + id + ", name=" + name + ", grade=" + grade + "]";
-
-    }
 /*
 	public boolean updateStudentGradeById(int id, double grade) {
 	/**
@@ -135,3 +137,8 @@ public Student(int id, String name, double grade) {
 	
 
 }
+
+
+
+
+
