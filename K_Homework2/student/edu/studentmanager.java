@@ -29,7 +29,7 @@ public class StudentManager {
 			Scanner fileIn = new Scanner(new FileInputStream("studentData.txt"));
 			
 			int i=0;
-		
+			
 			
 			// Read the Data line by line
 			while(fileIn.hasNext()) {
