@@ -1,3 +1,5 @@
 # K_Homework--2
 
 This program deals with managing information about students. It reads from a file and takes a student's first name last name grades and IDs. The Student class uses getters and setters for the fields. The classes are private fields with int strings and double attributes. The data is used to read from the file and initialize Student objects. The StudentManager Class handles most of the main tasks of the program. It takes an array of students to store and manipulate students objects.
+
+There aren't any dependencies while doing the program. The main function in the Main class serves as the program's entry point. It instantiates a StudentManager object named studentManager to manage student-related tasks. Then, it attempts to read student data from "studentData.txt" using the readFromFile function of studentManager, storing the outcome in fileReadStatus. Next, it displays all students using displayStudents. Subsequently, it searches for a student with ID 101 and updates the grade of a student with ID 102 to 95. The updated student details are displayed again. Overall, main orchestrates the program's flow, ensuring effective student data management.
